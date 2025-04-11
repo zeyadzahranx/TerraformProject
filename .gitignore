@@ -1,0 +1,15 @@
+# Terraform state
+*.tfstate
+*.tfstate.backup
+.terraform/
+crash.log
+terraform.tfvars
+all-ips.txt
+
+# AWS credentials
+*.pem
+.aws/
+
+# Local config
+*.log
+*.bak
