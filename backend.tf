@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "zeyad-s-dev-backend" 
+    bucket         = "zeyad-terraform-states"
     key            = "dev/terraform.tfstate"
-    region         = "us-east-1" # the default region
-    dynamodb_table = "zeyad-s-dev-lock" 
+    region         = "us-east-1"
+    dynamodb_table = "terraform-locks"
     encrypt        = true
   }
 }
